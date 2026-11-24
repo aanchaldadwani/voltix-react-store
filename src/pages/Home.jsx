@@ -111,7 +111,7 @@ function DealOfTheDay() {
 }
 
 const TABS = [
-  { id: 'best', label: 'Best sellers', filter: (p) => p.badge === 'Best Seller' || p.reviews > 250 },
+  { id: 'best', label: 'Best sellers', filter: (p) => p.badge === 'Best Seller' || p.reviews >= 200 },
   { id: 'new', label: 'New arrivals', filter: (p) => p.isNew },
   { id: 'sale', label: 'On sale', filter: (p) => p.oldPrice },
 ]
