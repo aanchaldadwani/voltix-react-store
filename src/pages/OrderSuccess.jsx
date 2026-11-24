@@ -37,7 +37,7 @@ export default function OrderSuccess({ id }) {
             {TRACK.map((t, i) => (
               <li key={t.label} className="relative flex flex-col items-center text-center">
                 {i > 0 && <span className={cx('absolute right-1/2 top-5 h-0.5 w-full', i === 0 ? 'bg-green-500' : 'bg-line')} />}
-                <span className={cx('relative grid size-10 place-items-center rounded-full', i === 0 ? 'bg-green-500 text-white' : 'bg-surface text-muted')}><t.icon /></span>
+                <span className={cx('relative z-10 grid size-10 place-items-center rounded-full', i === 0 ? 'bg-green-500 text-white' : 'bg-surface text-muted')}><t.icon /></span>
                 <span className={cx('mt-2 text-xs font-semibold sm:text-sm', i === 0 ? 'text-ink' : 'text-muted')}>{t.label}</span>
               </li>
             ))}

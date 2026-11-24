@@ -43,7 +43,7 @@ export default function Navbar({ path }) {
     <>
       <div className="bg-volt text-ink">
         <div className="container-x flex h-9 items-center justify-center gap-2 text-xs font-semibold sm:text-sm">
-          <FiTruck /> Free shipping on orders over $99 · Use code <span className="rounded bg-ink px-1.5 py-0.5 text-volt">VOLT10</span> for 10% off
+          <FiTruck /> Free shipping on orders over $99<span className="hidden sm:inline"> · Use code <span className="rounded bg-ink px-1.5 py-0.5 text-volt">VOLT10</span> for 10% off</span>
         </div>
       </div>
       <header className={cx('sticky top-0 z-40 border-b transition duration-300', scrolled ? 'border-line bg-white/85 shadow-card backdrop-blur-lg' : 'border-transparent bg-white')}>
