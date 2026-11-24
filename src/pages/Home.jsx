@@ -27,7 +27,7 @@ function HeroSlider() {
       <div className="relative h-[540px] overflow-hidden rounded-[2rem] bg-ink sm:h-[580px]">
         {SLIDES.map((s, idx) => (
           <div key={idx} className={cx('absolute inset-0 transition-opacity duration-1000', idx === i ? 'opacity-100' : 'pointer-events-none opacity-0')} aria-hidden={idx !== i}>
-            <img src={img(s.photo, 1800)} alt="" className={cx('size-full object-cover transition-transform duration-[7000ms] ease-out', idx === i ? 'scale-105' : 'scale-115')} />
+            <img src={img(s.photo, 1800)} alt="" className={cx('absolute inset-0 size-full object-cover transition-transform duration-[7000ms] ease-out', idx === i ? 'scale-105' : 'scale-115')} />
             <div className={cx('absolute inset-0 bg-gradient-to-r via-ink/60 to-ink/10', s.accent)} />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent" />
             {idx === i && (
